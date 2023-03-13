@@ -35,9 +35,11 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# ide setting
 .idea
 .vscode
 
+# yarn berry
 .yarn/*
 !.yarn/cache
 !.yarn/patches
@@ -45,3 +47,6 @@ next-env.d.ts
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# eslint cache
+.eslintcache
