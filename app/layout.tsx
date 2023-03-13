@@ -1,4 +1,8 @@
-import './globals.css';
+import { ReactNode } from 'react';
+
+import StyledComponentsRegistry from '../lib/StyledComponentsRegistry';
+
+import GlobalStyleThemeProvider from './GlobalStyleThemeProvider';
 
 export const metadata = {
   title: 'Create Next App',
@@ -8,11 +12,17 @@ export const metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="ko">
+      <body>
+        <StyledComponentsRegistry>
+          <GlobalStyleThemeProvider>
+            {children}
+          </GlobalStyleThemeProvider>
+        </StyledComponentsRegistry>
+      </body>
     </html>
   );
 }
