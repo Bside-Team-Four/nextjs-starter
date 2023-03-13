@@ -1,6 +1,6 @@
 module.exports = {
   // set your project id: https://cloud.cypress.io/
-  projectId: '',
+  projectId: '76a23h',
   e2e: {
     // We've imported your old cypress plugins here.
     // You may want to clean this up later by importing these.
