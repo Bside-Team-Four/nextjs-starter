@@ -1,6 +1,6 @@
 import type { CSSProp } from 'styled-components';
 
-import lightTheme from '../styles/theme';
+import lightTheme from '../src/styles/theme';
 
 type ThemeType = typeof lightTheme;
 

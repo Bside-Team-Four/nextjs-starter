@@ -4,6 +4,7 @@ module.exports = {
     es6: true,
     browser: true,
     jest: true,
+    worker: true,
   },
   ignorePatterns: [
     'node_modules/',
@@ -72,7 +73,7 @@ module.exports = {
     'react/jsx-no-useless-fragment': ['error', {
       allowExpressions: true,
     }],
-    '@next/next/no-html-link-for-pages': ['error', 'app/'],
+    '@next/next/no-html-link-for-pages': ['error', 'src/app/'],
     'simple-import-sort/imports': ['error', {
       groups: [
         ['^(assert|buffer|child_process|cluster|console|constants|crypto|dgram|dns|domain|events|fs|http|https|module|net|os|path|punycode|querystring|readline|repl|stream|string_decoder|sys|timers|tls|tty|url|util|vm|zlib|freelist|v8|process|async_hooks|http2|perf_hooks)(/.*|$)'], // Packages. `react` related packages come first.
