@@ -66,6 +66,14 @@ module.exports = {
         '@typescript-eslint/no-explicit-any': 'off',
       },
     },
+    {
+      files: ['cypress/**/*.ts'],
+      extends: ['plugin:cypress/recommended'],
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        project: ['./cypress/tsconfig.json'],
+      },
+    },
   ],
   rules: {
     'react/require-default-props': 'off',

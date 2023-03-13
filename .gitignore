@@ -54,3 +54,8 @@ next-env.d.ts
 # pwa
 public/*.js
 public/*.map
+
+# Cypress
+cypress/screenshots
+cypress/videos
+cypress/log
